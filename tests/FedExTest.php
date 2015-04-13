@@ -1,6 +1,6 @@
 <?php
 
-use maxirus\FedEx\FedEx;
+use FedEx\FedEx;
  
 class FedExTest extends PHPUnit_Framework_TestCase {
  

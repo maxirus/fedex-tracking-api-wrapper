@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "maxirus\\FedEx\\": "src"
+            "FedEx\\": "src"
         }
     }
 }

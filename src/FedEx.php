@@ -1,4 +1,4 @@
-<?php namespace maxirus\FedEx;
+<?php namespace FedEx;
 
 class FedEx {
 

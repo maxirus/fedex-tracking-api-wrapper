@@ -1,6 +1,6 @@
 <?php
 
-use maxirus\FedEx\TrackService\Track;
+use FedEx\TrackService\Track;
  
 class TrackTest extends PHPUnit_Framework_TestCase {
  

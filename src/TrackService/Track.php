@@ -1,8 +1,8 @@
 <?php
 
-namespace maxirus\FedEx\TrackService;
+namespace FedEx\TrackService;
 
-use maxirus\FedEx\FedEx;
+use FedEx\FedEx;
 
 class Track extends FedEx {
 
