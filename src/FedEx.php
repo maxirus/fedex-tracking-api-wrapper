@@ -139,6 +139,9 @@ class FedEx {
 			'Minor' 		=> $this->minor
 		);
 
+		// Enable detailed scans
+		$this->request['ProcessingOptions'] = 'INCLUDE_DETAILED_SCANS';
+
 		if(!is_null($addReq))
 			$this->request = array_merge($this->request, $addReq);
 

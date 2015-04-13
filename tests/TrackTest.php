@@ -14,11 +14,12 @@ class TrackTest extends PHPUnit_Framework_TestCase {
   {
     $track = new Track('KEY', 'PASSWORD', 'ACCT_NUM', 'METER_NUM');
     
-    $req = $track->getByTrackingId('123456789012');
+    $req = $track->getByTrackingId('999999999999');
     $this->assertNotEmpty($req);
 
     $this->assertTrue($req->HighestSeverity == 'SUCCESS');
     $this->assertTrue($req->CompletedTrackDetails->HighestSeverity == 'SUCCESS');
+    $this->assertTrue(is_array($req->CompletedTrackDetails->TrackDetails->Events));
 
   }
 
