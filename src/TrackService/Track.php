@@ -19,8 +19,8 @@ class Track extends FedEx {
      *  @param string   // Account number
      *  @param string   // Meter number
      */
-	public function __construct($key, $passwd, $acct, $meter, 
-        $wsdlFile = 'TrackService_v9.wsdl')
+	public function __construct($key, $passwd, $acct, $meter,
+        $wsdlFile = 'TrackService_v10.wsdl')
     {
         parent::__construct($wsdlFile, $key, $passwd, $acct, $meter);
 
@@ -33,7 +33,7 @@ class Track extends FedEx {
 
     /**
      *  Gets the tracking detials for the
-     *  given tracking number and returns 
+     *  given tracking number and returns
      *  the FedEx request as an object.
      *
      *  @param string   // Tracking #
@@ -51,7 +51,7 @@ class Track extends FedEx {
     	$req = $this->buildRequest($this->request);
 
     	return $this->getSoapClient()->track($req);;
-    	
+
     }
 
 }

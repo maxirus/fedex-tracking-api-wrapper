@@ -1,12 +1,12 @@
 <?php
 
 use FedEx\FedEx;
- 
+
 class FedExTest extends PHPUnit_Framework_TestCase {
- 
+
   public function testFedEx()
   {
-    $fedex = new FedEx('TrackService_v9.wsdl', '', '', '', '');
+    $fedex = new FedEx('TrackService_v10.wsdl', '', '', '', '');
     $this->assertTrue(1 == 1);
   }
 
@@ -20,7 +20,7 @@ class FedExTest extends PHPUnit_Framework_TestCase {
 
   public function testBuildRequest()
   {
-    $fedex = new FedEx('TrackService_v9.wsdl', '', '', '', '');
+    $fedex = new FedEx('TrackService_v10.wsdl', '', '', '', '');
     $req = $fedex->buildRequest();
     $this->assertNotEmpty($req);
 
@@ -29,5 +29,5 @@ class FedExTest extends PHPUnit_Framework_TestCase {
     $this->assertNotEmpty($req['TransactionDetail']);
     $this->assertNotEmpty($req['Version']);
   }
- 
+
 }
