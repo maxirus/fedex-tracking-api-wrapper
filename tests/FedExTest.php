@@ -6,7 +6,7 @@ class FedExTest extends PHPUnit_Framework_TestCase {
 
   public function testFedEx()
   {
-    $fedex = new FedEx('TrackService_v10.wsdl', '', '', '', '');
+    $fedex = new FedEx('TrackService_v12.wsdl', '', '', '', '');
     $this->assertTrue(1 == 1);
   }
 
@@ -20,7 +20,7 @@ class FedExTest extends PHPUnit_Framework_TestCase {
 
   public function testBuildRequest()
   {
-    $fedex = new FedEx('TrackService_v10.wsdl', '', '', '', '');
+    $fedex = new FedEx('TrackService_v12.wsdl', '', '', '', '');
     $req = $fedex->buildRequest();
     $this->assertNotEmpty($req);
 
