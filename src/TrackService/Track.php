@@ -20,7 +20,7 @@ class Track extends FedEx {
      *  @param string   // Meter number
      */
 	public function __construct($key, $passwd, $acct, $meter,
-        $wsdlFile = 'TrackService_v10.wsdl')
+        $wsdlFile = 'TrackService_v12.wsdl')
     {
         parent::__construct($wsdlFile, $key, $passwd, $acct, $meter);
 
@@ -28,7 +28,7 @@ class Track extends FedEx {
         $this->endPoint = 'https://wsbeta.fedex.com:443/web-services';
 
         $this->setCustomerTransactionId('Track Request via PHP');
-        $this->setVersion('trck', 9, 1, 0);
+        $this->setVersion('trck', 12, 0, 0);
     }
 
     /**
