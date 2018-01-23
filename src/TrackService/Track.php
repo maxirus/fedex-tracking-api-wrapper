@@ -28,7 +28,7 @@ class Track extends FedEx {
         $this->endPoint = 'https://wsbeta.fedex.com:443/web-services';
 
         $this->setCustomerTransactionId('Track Request via PHP');
-        $this->setVersion('trck', 9, 1, 0);
+	$this->setVersion('trck', 10, 0, 0);
     }
 
     /**
